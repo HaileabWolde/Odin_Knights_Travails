@@ -31,7 +31,6 @@ while(queue.length > 0){
     if(start[0] === end[0] && start[1] === end [1]){
         console.log(`You have made it in ${path.length} moves`)
         console.log(`The Shortest path is ${path.map((eachmap)=> `[${eachmap}]`).join(' -> ')}`)
-        return path;
     }
     let neighborNode = findNeghiborNode(start);
     for(let neighbor of neighborNode){
@@ -42,6 +41,7 @@ while(queue.length > 0){
       }
 
     }
+    return null;
   
 }
 };
